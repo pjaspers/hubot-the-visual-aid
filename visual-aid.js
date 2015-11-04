@@ -9,13 +9,14 @@ var data = [
   { regexes: ["cue @?(jelle|verbeeckx|fousa|jaakske)"], urls: require("./data/cue.json")["fousa"] },
   { regexes: ["cue @?(bob|bab|bib|boob)"], urls: require("./data/cue.json")["reprazent"] },
   { regexes: ["cue @?(pcbob)"], urls: require("./data/cue.json")["pcbob"] },
+  { regexes: ["cue @?(santabob|santa|christmas|kerstman)"], urls: require("./data/cue.json")["santabob"] },
   { regexes: ["cue @?(soffe|sophie|poeziemauw)"], urls: require("./data/cue.json")["soffe"] },
   { regexes: ["cue @?(atog|koen)"], urls: require("./data/cue.json")["atog"] },
   { regexes: ["cue @?(evert)"], urls: require("./data/cue.json")["evert"] },
   { regexes: ["cue @?(tomk|honcho)"], urls: require("./data/cue.json")["tomk"] },
   { regexes: ["cue @?(bram|bramon|chili|sombrero)"], urls: require("./data/cue.json")["bramon"] },
   { regexes: ["cue @?(koekoek)"], urls: require("./data/cue.json")["koekoek"] },
-  { regexes: ["cue @?(tentoone|friends|team|jebus)"], urls: require("./data/cue.json")["10to1"] }]
+  { regexes: ["cue @?(tentoone|friends|team|jebus)"], urls: require("./data/cue.json")["10to1"] },
   { regexes: ["cue @?(toon)"], urls: require("./data/cue.json")["toon"] }]
 
 // Goes over all the regexes defined in `data` and returns a random url defined in the object
