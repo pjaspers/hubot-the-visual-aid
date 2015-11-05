@@ -21,11 +21,10 @@
   },
   "devDependencies": {
     "hubot": "^2.7.5",
-    "hubot-mock-adapter": "^1.0.0",
-    "mocha": "1.20.1",
-    "chai": "^1.9.1"
+    "mocha": "2.3.3"
   },
-  "scripts": {
+    "scripts": {
+       "test" : "mocha"
   },
   "homepage": "https://github.com/pjaspers/hubot-the-visual-aid"
 }
