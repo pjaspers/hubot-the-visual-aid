@@ -15,4 +15,4 @@ env:
 after_success:
 - echo "Restarting hubot (which also runs npm install)"
 - |
-  curl -n -H "Authorization: Bearer $HEROKU_API_KEY" -X DELETE "https://api.heroku.com/apps/$APP_ID_OR_NAME/dynos" -H "Accept: application/vnd.heroku+json; version=3" > /dev/null
+  test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && curl -n -H "Authorization: Bearer $HEROKU_API_KEY" -X DELETE "https://api.heroku.com/apps/$APP_ID_OR_NAME/dynos" -H "Accept: application/vnd.heroku+json; version=3" > /dev/null
