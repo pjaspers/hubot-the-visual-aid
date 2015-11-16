@@ -17,4 +17,4 @@ env:
 #   script: scripts/restart_hubot
 #   all_branches: true
 after_success:
-  - ./scripts/restart_hubot
+  - ./script/restart_hubot
