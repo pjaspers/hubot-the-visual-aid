@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Requires these env variables to be set (all handled by Travis):
+#
+# - HEROKU_API_KEY
+# - APP_ID_OR_NAME
+#
+# These were set by using the following commands:
+#
+# In hubot folder:
+#
+#       heroku auth:token
+#
+# In this project:
+#
+#       travis encrypt HEROKU_API_KEY=<token from previous command> --add env.global
+#       travis encrypt APP_ID_OR_NAME=<app_id_or_name> --add env.global
+#
+# The -e flag causes the script to exit as soon as one command returns a non-zero exit code.
+# The -v flag makes the shell print all lines in the script before executing them
+set -ev
+
+restart_hubot() {
+    echo "Restarting hubot"
+    curl -n -H "Authorization: Bearer $HEROKU_API_KEY" -X DELETE "https://api.heroku.com/apps/$APP_ID_OR_NAME/dynos" -H "Accept: application/vnd.heroku+json; version=3" > /dev/null
+}
+
+restart_hubot
