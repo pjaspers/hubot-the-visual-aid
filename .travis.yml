@@ -15,3 +15,4 @@ env:
 deploy:
   provider: script
   script: scripts/restart_hubot
+  all_branches: true
