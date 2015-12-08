@@ -27,7 +27,7 @@ var data = [
 module.exports = function(input) {
   return _.sample(_.result(_.find(data, function(thing) {
                       return thing.regexes.some(function(regex) {
-                               return new RegExp(regex).test(input);
+                               return new RegExp(regex, "i").test(input);
                              });
                     }), "urls"));
 }
