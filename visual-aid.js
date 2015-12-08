@@ -19,7 +19,7 @@ var data = [
   { regexes: ["cue @?(tentoone|friends|team|jebus)"], urls: require("./data/cue.json")["10to1"] },
   { regexes: ["cue @?(toon)"], urls: require("./data/cue.json")["toon"] },
   { regexes: ["cue @?(jira|raf)"], urls: require("./data/cue.json")["raf"] },
-  { regexes: ["cue @?(nate|nathan)"], urls: require("./data/cue.json")["nathan"] }
+  { regexes: ["cue @?(nate|nathan|hipster|nathiorix)"], urls: require("./data/cue.json")["nathan"] }
 ]
 
 // Goes over all the regexes defined in `data` and returns a random url defined in the object
