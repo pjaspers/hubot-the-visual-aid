@@ -3,7 +3,7 @@ var assert = require('assert'),
     aid = require("../visual-aid.js");
 
 describe('when it hears', function () {
-  ["unexplainable", "interesting", "cue soffe", "cue raf", "cue nathan"].forEach(function(thing) {
+  ["unexplainable", "interesting", "cue soffe", "cue raf", "cue nathan", "cue pivotal"].forEach(function(thing) {
     it(thing + ", it returns a result", function () {
       assert(aid(thing).length > 0);
     });
