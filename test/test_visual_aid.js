@@ -20,4 +20,12 @@ describe('when it hears', function () {
   it("bobstinkt, it doesn't return a result", function () {
     assert.strictEqual(aid("bobstinkt"), undefined);
   });
+
+  it("replies when things are fine", function () {
+    assert(aid("Nah, this is fine").length > 0);
+  });
+
+  it("#also #thinks #hashtag #fine #is #fine", function () {
+    assert(aid("Everything is #fine").length > 0);
+  });
 });
