@@ -25,6 +25,10 @@ describe('when it hears', function () {
     assert(aid("Nah, this is fine").length > 0);
   });
 
+  it("doesn't replies when fine is used in a word", function () {
+    assert.strictEqual(aid("Nah, this is undefined"), undefined);
+  });
+
   it("#also #thinks #hashtag #fine #is #fine", function () {
     assert(aid("Everything is #fine").length > 0);
   });

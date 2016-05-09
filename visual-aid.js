@@ -3,7 +3,7 @@ var _ = require("lodash");
 var data = [
   { regexes: ["unexplainable"], urls: require("./data/unexplainable.json")},
   { regexes: ["interesting", "fascinating"], urls: require("./data/interesting.json")},
-  { regexes: ["fine", "thisisfine"], urls: require("./data/fine.json")},
+  { regexes: ["\\bfine\\b", "thisisfine"], urls: require("./data/fine.json")},
   { regexes: ["cue @?(lewis|bowling|bowlboy|delul)"], urls: require("./data/cue.json")["lewis"] },
   { regexes: ["cue @?(piet|junkiesxl)"], urls: require("./data/cue.json")["pjaspers"] },
   { regexes: ["cue @?(inferis|geknipt|dotter|dottom|a3|maaagd)"], urls: require("./data/cue.json")["inferis"] },
