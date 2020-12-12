@@ -1,6 +1,8 @@
 {
-  "regexes": ["cue @?(bob|bab|bib|boob)"],
+  "regexes": [
+    "cue @?(bob|bab|bib|boob)"
+  ],
   "urls": [
-    "http://f.cl.ly/items/0C2d062j0B1P3F0v3h47/animated-2012-08-29_15h-01m-36s.gif"
+
   ]
 }

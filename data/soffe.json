@@ -1,6 +1,8 @@
 {
-  "regexes": ["cue @?(soffe|sophie|poeziemauw)"],
+  "regexes": [
+    "cue @?(soffe|sophie|poeziemauw)"
+  ],
   "urls": [
-    "http://f.cl.ly/items/1y0p2H1U1k1W090f2r1A/animated-2012-09-27_15h-59m-51s.gif"
+
   ]
 }
