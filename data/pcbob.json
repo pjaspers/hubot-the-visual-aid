@@ -1,5 +1,7 @@
 {
-  "regexes": ["cue @?(pcbob)"],
+  "regexes": [
+    "cue @?(pcbob)"
+  ],
   "urls": [
     "http://f.cl.ly/items/2e432e1K0J2x111J331V/PCBOB.gif"
   ]
