@@ -1,0 +1,6 @@
+{
+  "regexes": ["cue @?(toon)"],
+  "urls": [
+    "https://media.giphy.com/media/3oEdv0h1GfU2fMnWhi/giphy.gif"
+  ]
+}
