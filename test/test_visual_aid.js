@@ -13,6 +13,10 @@ describe('when it hears', function () {
     assert(aid("cue hipster").length > 0);
   });
 
+  it("cue pjaspers, it returns a pjaspers", function() {
+    assert(aid("cue pjaspers").length > 0);
+  });
+
   it("cue HIPSTER, it doesn't care about the all caps and returns an image", function() {
     assert(aid("cue HIPSTER").length > 0);
   });

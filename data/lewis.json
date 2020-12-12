@@ -1,0 +1,6 @@
+{
+  "regexes": ["cue @?(lewis|bowling|bowlboy|delul)"],
+  "urls": [
+    "https://pile.pjaspers.com/lewis.gif"
+  ]
+}

@@ -1,1 +1,4 @@
-["http://i.imgur.com/WFTX0VX.png"]
+{
+  "regexes": ["\\bfine\\b", "thisisfine"],
+  "urls": ["http://i.imgur.com/WFTX0VX.png"]
+}
