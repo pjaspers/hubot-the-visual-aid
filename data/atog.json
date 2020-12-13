@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(atog|koen)"
   ],
+  "example": "cue atog",
   "urls": [
 
   ]

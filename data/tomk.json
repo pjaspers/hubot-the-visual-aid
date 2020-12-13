@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(tomk|honcho)"
   ],
+  "example": "cue tomk",
   "urls": [
 
   ]

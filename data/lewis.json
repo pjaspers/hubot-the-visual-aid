@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(lewis|bowling|bowlboy|delul)"
   ],
+  "example": "cue lewis",
   "urls": [
     "https://pile.pjaspers.com/lewis.gif"
   ]

@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(evert)"
   ],
+  "example": "cue evert",
   "urls": [
 
   ]

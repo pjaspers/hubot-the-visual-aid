@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(santabob|santa|christmas|kerstman)"
   ],
+  "example": "cue santabob",
   "urls": [
     "https://pile.pjaspers.com/santabob-oMmjx5gGJW.gif"
   ]
