@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(inferis|geknipt|dotter|dottom|a3|maaagd)"
   ],
+  "example": "cue inferis",
   "urls": [
 
   ]

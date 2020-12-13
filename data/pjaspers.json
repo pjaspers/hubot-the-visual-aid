@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(piet|pjaspers)"
   ],
+  "example": "cue pjaspers",
   "urls": [
     "http://f.cl.ly/items/2w3V2T290K1d2x3c1O2c/animated-2012-09-14_14h-36m-39s.gif"
   ]

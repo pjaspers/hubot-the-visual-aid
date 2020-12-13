@@ -2,6 +2,8 @@
   "regexes": [
     "cue @?(jelle|verbeeckx|fousa|jaakske)"
   ],
+  "example": "cue fousa",
   "urls": [
+
   ]
 }

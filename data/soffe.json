@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(soffe|sophie|poeziemauw)"
   ],
+  "example": "cue soffe",
   "urls": [
 
   ]

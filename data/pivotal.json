@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(pivotal)"
   ],
+  "example": "cue pivotal",
   "urls": [
     "https://media.giphy.com/media/xT1XH0j7yRI9f2zHZC/giphy.gif"
   ]

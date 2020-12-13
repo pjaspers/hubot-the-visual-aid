@@ -2,6 +2,7 @@
   "regexes": [
     "cue @?(bob|bab|bib|boob)"
   ],
+  "example": "cue bob",
   "urls": [
 
   ]
