@@ -1,0 +1,62 @@
+#! /usr/bin/env ruby
+
+require "json"
+require "net/http"
+
+def check_url(url, redirected: 0, original_url: nil)
+  uri = URI.parse(url)
+  original_url ||= url
+  request = Net::HTTP.new(uri.host, uri.port)
+  request.use_ssl = (uri.scheme == 'https')
+  response = request.request_head(uri.path)
+
+  if Net::HTTPSuccess === response
+    if redirected > 0
+      [original_url, :warning, url]
+    else
+      [original_url, :good, nil]
+    end
+  elsif Net::HTTPRedirection === response
+    if redirected > 2
+      raise "#{url} is a loop"
+    else
+      check_url(response["location"], redirected: redirected +=1, original_url: original_url)
+    end
+  else
+    [original_url, :bad, response]
+  end
+rescue SocketError, EOFError => e
+  [original_url, :bad, e]
+end
+
+checks = Dir.glob("data/*.json").inject({good: [], warning: [], bad: []}) do |result, entry|
+  json = JSON.parse(File.read(entry))
+  puts "Checking #{entry}"
+  bads = []
+  json.fetch("urls").each do |url|
+    url, code, message = check_url(url)
+    if [:bad].include?(code)
+      json["urls"] -= [url]
+      print "E"
+    elsif [:warning].include?(code)
+      print "W"
+      json["urls"][json["urls"].index(url)] = message
+    else
+      print "."
+    end
+    result[code] << [url, message]
+  end
+
+  File.open(entry, "w") {|f| f.write JSON.pretty_generate(json) }
+  print "\n"
+  result
+end
+
+[:warning, :bad].each do |code|
+  if checks[code].any?
+    puts "Such #{code} for these:"
+    checks[code].each do |url|
+      puts "  - #{url}"
+    end
+  end
+end
