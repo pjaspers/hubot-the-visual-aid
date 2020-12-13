@@ -1,6 +1,8 @@
 {
-  "regexes": ["cue @?(jelle|verbeeckx|fousa|jaakske)"],
+  "regexes": [
+    "cue @?(jelle|verbeeckx|fousa|jaakske)"
+  ],
   "urls": [
-    "http://cl.ly/image/0L0b2v1J3F47/animated-2012-09-14_10h-19m-23s.gif"
+    "https://cl.ly/404"
   ]
 }

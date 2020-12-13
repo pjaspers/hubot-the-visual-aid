@@ -1,5 +1,7 @@
 {
-  "regexes": ["cue @?(jira|raf)"],
+  "regexes": [
+    "cue @?(jira|raf)"
+  ],
   "urls": [
     "https://media.giphy.com/media/3oEduV5tJq4TafVxMQ/giphy.gif"
   ]

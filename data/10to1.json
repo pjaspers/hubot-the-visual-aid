@@ -1,5 +1,7 @@
 {
-  "regexes": ["cue @?(tentoone|friends|team|jebus)"],
+  "regexes": [
+    "cue @?(tentoone|friends|team|jebus)"
+  ],
   "urls": [
     "https://pile.pjaspers.com/last_supper_10to1.gif"
   ]

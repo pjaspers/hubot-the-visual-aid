@@ -1,6 +1,7 @@
 {
-  "regexes": ["cue @?(tomk|honcho)"],
+  "regexes": [
+    "cue @?(tomk|honcho)"
+  ],
   "urls": [
-    "http://cl.ly/0g250e030Z31293f2D1l"
   ]
 }
