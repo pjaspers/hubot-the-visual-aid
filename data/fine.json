@@ -1,6 +1,6 @@
 {
   "regexes": [
-    "\\bfine\\b",
+    "fine",
     "thisisfine"
   ],
   "example": "this is fine",
