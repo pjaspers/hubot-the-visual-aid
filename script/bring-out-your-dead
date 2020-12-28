@@ -4,6 +4,8 @@ require "json"
 require "net/http"
 
 def check_url(url, redirected: 0, original_url: nil)
+  return [url, :good, "youtube ,,shrug"] if url =~ /youtube.com/
+
   uri = URI.parse(url)
   original_url ||= url
   request = Net::HTTP.new(uri.host, uri.port)
@@ -27,6 +29,8 @@ def check_url(url, redirected: 0, original_url: nil)
   end
 rescue SocketError, EOFError => e
   [original_url, :bad, e]
+rescue URI::InvalidURIError => e
+  [original_url, :good, "assuming this is text"]
 end
 
 checks = Dir.glob("data/*.json").inject({good: [], warning: [], bad: []}) do |result, entry|
