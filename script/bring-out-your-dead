@@ -51,7 +51,7 @@ checks = Dir.glob("data/*.json").inject({good: [], warning: [], bad: []}) do |re
     result[code] << [url, message]
   end
 
-  File.open(entry, "w") {|f| f.write JSON.pretty_generate(json) }
+  File.open(entry, "w") {|f| f.write JSON.pretty_generate(json); f.write("\n") }
   print "\n"
   result
 end
