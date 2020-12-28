@@ -1,0 +1,33 @@
+{
+  "regexes": [
+    "@koffie",
+    "sorry @raf"
+  ],
+  "example": "@koffie",
+  "urls": [
+    "Het is tijd voor koffie @soffe, @reprazent, @raf,  @teufen, @to1ne, @pjaspers, @lewis, @plusbot",
+    "https://www.youtube.com/watch?v=IljhjzocWkI",
+    "https://i.imgur.com/EN7EF.gif",
+    "https://66.media.tumblr.com/b372a069bb880375d1b32b63a966e38b/tumblr_mukmk4rXzy1s80ppfo1_400.gif",
+    "https://i.imgur.com/3jjsL6z.gif",
+    "https://dzwonsemrish7.cloudfront.net/items/1s3x3e0h2J0a473c2w05/jules-gourmet.gif",
+    "https://64.media.tumblr.com/tumblr_kopje6pkNm1qzantbo1_400.jpg",
+    "https://media1.tenor.com/images/b25fca944049de1518cd9202c8b4d0b7/tenor.gif?itemid=10356741",
+    "https://media0.giphy.com/media/KpB7H0EPBWdDW/giphy.gif",
+    "https://media2.giphy.com/media/3oFyDpRagf96Uz9rzO/giphy.gif",
+    "https://media4.giphy.com/media/oZEBLugoTthxS/giphy.gif",
+    "https://media4.giphy.com/media/yFPdgJYwxZvk4/giphy.gif?cid=ecf05e47ee1d2e8dc849f6578d55b22455811ca8cc4d90a8&rid=giphy.gif",
+    "https://media1.giphy.com/media/tawln56v2FdZe/giphy.gif",
+    "https://media1.giphy.com/media/3jVT4U5bilspG/giphy.gif",
+    "https://media4.giphy.com/media/pHZ8BDWQhJrvLmL29M/giphy.gif",
+    "https://media3.giphy.com/media/pzryvxGeykOxeC0fWb/giphy.gif",
+    "https://media2.giphy.com/media/igFPpuVhit5j3cmJJI/giphy.gif",
+    "https://media4.giphy.com/media/OSCdu2J3hgCcg/giphy.gif",
+    "https://media1.giphy.com/media/yLpNlfdHBaXQs/giphy.gif",
+    "https://media0.giphy.com/media/3orif5sOfka5IYCVs4/giphy.gif",
+    "https://media4.giphy.com/media/26tk1oSJ0gALDKKSk/giphy.gif",
+    "https://media1.giphy.com/media/3o6MbpKuB84WIIeIFi/giphy.gif",
+    "https://media3.giphy.com/media/ceeFbVxiZzMBi/giphy.gif",
+    "https://media4.giphy.com/media/3o6MbgEmYyLNNH41UY/giphy.gif"
+  ]
+}
