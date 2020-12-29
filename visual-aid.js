@@ -1,11 +1,12 @@
-var _ = require("lodash");
+const _ = require("lodash");
+const glob = require("glob");
+const path = require("path");
 
 const loadJSON = () => {
-  const glob = require("glob");
   let data = [];
-  const files = glob.sync("data/*.json");
+  const files = glob.sync(path.join(__dirname, 'data', '*.json'));
   files.forEach((file) => {
-    const json = require("./" + file);
+    const json = require(file);
     data.push(json);
   });
   return data;

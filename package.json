@@ -17,14 +17,15 @@
     "url": "https://github.com/pjaspers/hubot-the-visual-aid/issues"
   },
   "dependencies": {
-      "lodash": "3.5.0"
+    "hubot-the-visual-aid": "github:pjaspers/hubot-the-visual-aid",
+    "lodash": "3.5.0"
   },
   "devDependencies": {
     "hubot": "^2.7.5",
     "mocha": "2.3.3"
   },
-    "scripts": {
-       "test" : "mocha"
+  "scripts": {
+    "test": "mocha"
   },
   "homepage": "https://github.com/pjaspers/hubot-the-visual-aid"
 }
