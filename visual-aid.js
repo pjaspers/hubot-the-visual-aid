@@ -23,7 +23,9 @@ function wrapRegExp(string) {
   if (/[.*+?^${}()|[\]\\]/.test(string)) {
     return string;
   } else {
-    return `(?:\\b|\\B)${string}\\b`;
+    // Match if its between word boundaries or
+    // Match if non-word boundary but not behind a word boundary
+    return `(?:\\b|\\B(?!\\w))${string}\\b`;
   }
 }
 

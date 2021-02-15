@@ -17,6 +17,10 @@ describe('findUrlFor', function () {
     assert.strictEqual(findUrlFor("Nah, this is undefined"), undefined);
   });
 
+  it("doesn't replies when fine is used in a word", function () {
+    assert.strictEqual(findUrlFor("ik ken alleen morfine uit ervaring"), undefined);
+  });
+
   it("#also #thinks #hashtag #fine #is #fine", function () {
     assert(findUrlFor("Everything is #fine").length > 0);
   });
